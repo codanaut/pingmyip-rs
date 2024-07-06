@@ -1,0 +1,16 @@
+[package]
+name = "pingmyip-rs"
+version = "0.0.1"
+edition = "2021"
+description = "A simple Rust library to fetch your public IP address from pingmyip.io"
+repository = "https://github.com/codanaut/pingmyip-rs"
+license = "MIT OR Apache-2.0"
+readme = "README.md"
+
+[dependencies]
+reqwest = "0.11"
+tokio = { version = "1", features = ["full"] }
+
+[lib]
+name = "pingmyip"
+path = "src/lib.rs"
