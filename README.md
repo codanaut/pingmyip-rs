@@ -1,6 +1,6 @@
 # PingMyIP
 
-A simple Rust library to fetch your public IP address from pingmyip.io
+A simple Rust library to fetch your public IP address
 
 ## Features
 
@@ -13,7 +13,7 @@ Add this to your `Cargo.toml`:
 
 ```toml
 [dependencies]
-pingmyip = "0.0.1"
+pingmyip = "0.0.2"
 ```
 
 ## Usage

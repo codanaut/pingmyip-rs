@@ -2,14 +2,14 @@ use reqwest::Error;
 
 /// Fetches the IP details as JSON from pingmyip.io
 pub async fn fetch_ip_json() -> Result<String, Error> {
-    let url = "https://pingmyip.io/json";
+    let url = "https://pingmyip.codanaut.com/json";
     let response = reqwest::get(url).await?.text().await?;
     Ok(response)
 }
 
 /// Fetches the IP details as plain text from pingmyip.io
 pub async fn fetch_ip_text() -> Result<String, Error> {
-    let url = "https://pingmyip.io/txt";
+    let url = "https://pingmyip.codanaut.com/txt";
     let response = reqwest::get(url).await?.text().await?;
     Ok(response)
 }
